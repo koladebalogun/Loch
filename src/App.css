@@ -14,6 +14,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.App {
+  visibility: hidden;
+}
+
 .contents {
   display: flex;
 }
@@ -58,8 +62,6 @@ body {
   margin-top: 16px;
   width: 500px;
 }
-
-
 
 section {
   margin-top: 72px;
@@ -123,8 +125,8 @@ section {
   .banner_content {
     display: block;
   }
-  
-  .banner_header h1{
+
+  .banner_header h1 {
     text-align: center;
   }
 
@@ -133,7 +135,6 @@ section {
     margin: 16px auto;
     text-align: center;
   }
-
 
   section {
     margin-top: 20px;
@@ -181,7 +182,6 @@ section {
   .banner_header p {
     width: 300px;
   }
-
 
   section {
     margin-top: 20px;

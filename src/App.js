@@ -13,14 +13,20 @@ function App() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      tl.from(".banner_header, .banner_slider, .section_image, .section_content", 1, {
-        opacity: 0,
-        y: 40,
-        ease: "power4.inOut",
-        stagger: {
-          amount: 1,
-        },
-      });
+      gsap.to(".App", 0, { css: { visibility: "visible" } });
+
+      tl.from(
+        ".banner_header, .banner_slider, .section_image, .section_content",
+        1,
+        {
+          opacity: 0,
+          y: 40,
+          ease: "power4.inOut",
+          stagger: {
+            amount: 1,
+          },
+        }
+      );
     });
 
     return () => ctx.revert();

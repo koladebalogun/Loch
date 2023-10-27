@@ -1,5 +1,6 @@
 .testimonial {
   position: relative;
+  visibility: hidden;
 }
 
 .testimonial_icon {
