@@ -1,0 +1,37 @@
+.testimonial_container {
+  margin: 0 0% 0% 20%;
+}
+
+.item {
+  min-height: 10rem;
+  /* min-width: 25rem; */
+  /* padding: 20px; */
+}
+
+.item img {
+  pointer-events: none;
+}
+
+.item_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.inner_carousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+  .testimonial_container {
+    margin: 0 0% 0% 5%;
+  }
+}

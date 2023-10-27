@@ -1,0 +1,40 @@
+.testimonial {
+  position: relative;
+}
+
+.testimonial_icon {
+  position: absolute;
+  bottom: 30px;
+  left: 11%;
+}
+
+.testimonial_header h1 {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-align: right;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding-right: 62px;
+  margin-bottom: 20px;
+}
+
+.testimonial_header hr {
+  width: 87%;
+  margin: 0 auto;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .hero_images {
+    width: 100%;
+    height: 30vh;
+    padding: none;
+  }
+} */
+
+@media only screen and (max-width: 500px){
+  .testimonial_header h1{
+    margin-top: 40px;
+  }
+}
