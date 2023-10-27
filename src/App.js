@@ -1,10 +1,6 @@
 import "./App.css";
 import { useLayoutEffect, useEffect } from "react";
 import gsap from "gsap";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import cohorts from "./images/Cohorts.svg";
 import Bell from "./images/Bell.svg";
 import Eye from "./images/Eye.svg";
@@ -15,18 +11,14 @@ import Slider from "./components/slider/Slider";
 function App() {
   let tl = gsap.timeline();
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      tl.from(".banner_header, .banner_slider", 2, {
+      tl.from(".banner_header, .banner_slider, .section_image, .section_content", 1, {
         opacity: 0,
         y: 40,
         ease: "power4.inOut",
         stagger: {
-          amount: 0.5,
+          amount: 1,
         },
       });
     });
@@ -64,10 +56,10 @@ function App() {
           <section>
             <div className="section_inner">
               <div className="section_image">
-                <img src={cohorts} data-aos="fade-up" alt="cohorts" />
+                <img src={cohorts} alt="cohorts" />
               </div>
 
-              <div className="section_content" data-aos="fade-up">
+              <div className="section_content">
                 <div className="eye_icon">
                   <img src={Eye} alt="eye icon" />
                 </div>
