@@ -124,14 +124,14 @@
     width: 340px;
     margin: 44px auto;
   }
-/*   
-  .signup_btn {
-    margin: 44px auto;
-  } */
   
   .signup_notice{
     margin: 35px auto;
     text-align: center;
+  }
+  
+  .overlay {
+    display: none;
   }
 }
 
@@ -151,5 +151,9 @@
   
   .signup_notice{
     margin-top: 35px;
+  }
+  
+  .overlay {
+    display: none;
   }
 }
